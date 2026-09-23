@@ -11,6 +11,7 @@ declare -A osInfo=(
 
 # Programs to install
 PROGRAMS=(
+  uv
   stow
   nvim
   tmux
@@ -106,5 +107,6 @@ echo
 
 # Apply dotfiles
 stow nvim tmux
-# Install oh-my-zsh
+# Install oh-my-zsh and uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
