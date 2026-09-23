@@ -17,6 +17,7 @@ PROGRAMS=(
   tmux
   git
   curl
+  clangd
 )
 
 # Package name overrides
