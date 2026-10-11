@@ -100,3 +100,4 @@ bindkey "^[[1;5C" forward-word
 ufetch
 
 alias ls='eza'
+alias slop='claude-hub -L --dangerously-skip-permissions'
