@@ -110,4 +110,7 @@ echo
 stow nvim tmux
 # Install oh-my-zsh and uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+pushd ~
+git clone https://github.com/romkatv/powerlevel10k.git
+popd
