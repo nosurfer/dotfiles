@@ -13,6 +13,8 @@ declare -A osInfo=(
 PROGRAMS=(
   uv
   stow
+  gdb
+  pwndbg
   nvim
   tmux
   git
@@ -107,7 +109,7 @@ done
 echo
 
 # Apply dotfiles
-stow nvim tmux
+stow nvim tmux gdb zsh kitty
 # Install oh-my-zsh and uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 

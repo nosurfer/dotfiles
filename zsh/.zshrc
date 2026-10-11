@@ -16,8 +16,7 @@ path=(
   "$HOME/bin"
   /usr/local/bin
   /usr/local/sbin
-  /opt/homebrew/bin
-  /opt/homebrew/sbin
+  /sbin
   $path
 )
 export PATH
@@ -96,6 +95,8 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
 # end clear
-clear
+# clear
 
-alias ls='ls --color=auto'
+ufetch
+
+alias ls='eza'
